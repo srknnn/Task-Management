@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{993CA50A-B500-41AB-B17B-E980FDD8EE40}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TaskManagementProject</RootNamespace>
+    <AssemblyName>TaskManagementProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FinishedTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinishedTask.Designer.cs">
+      <DependentUpon>FinishedTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyzeTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalyzeTask.Designer.cs">
+      <DependentUpon>AnalyzeTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessAnalystForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessAnalystForm.Designer.cs">
+      <DependentUpon>BusinessAnalystForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerEditForm.Designer.cs">
+      <DependentUpon>CustomerEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerListForm.Designer.cs">
+      <DependentUpon>CustomerListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRequestCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerRequestCreate.Designer.cs">
+      <DependentUpon>CustomerRequestCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRequestEvaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerRequestEvaluation.Designer.cs">
+      <DependentUpon>CustomerRequestEvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeEditForm.Designer.cs">
+      <DependentUpon>EmployeeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeListForm.Designer.cs">
+      <DependentUpon>EmployeeListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeLoginForm.Designer.cs">
+      <DependentUpon>EmployeeLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdleTaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdleTaskForm.Designer.cs">
+      <DependentUpon>IdleTaskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectDetailsForm.Designer.cs">
+      <DependentUpon>ProjectDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectEditForm.Designer.cs">
+      <DependentUpon>ProjectEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectListForm.Designer.cs">
+      <DependentUpon>ProjectListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectManagerForm.Designer.cs">
+      <DependentUpon>ProjectManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoftwareDeveloperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoftwareDeveloperForm.Designer.cs">
+      <DependentUpon>SoftwareDeveloperForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskEvaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskEvaluation.Designer.cs">
+      <DependentUpon>TaskEvaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskForm.Designer.cs">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskTakeDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskTakeDown.Designer.cs">
+      <DependentUpon>TaskTakeDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeamLeaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamLeaderForm.Designer.cs">
+      <DependentUpon>TeamLeaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TesterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TesterForm.Designer.cs">
+      <DependentUpon>TesterForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FinishedTask.resx">
+      <DependentUpon>FinishedTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalyzeTask.resx">
+      <DependentUpon>AnalyzeTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessAnalystForm.resx">
+      <DependentUpon>BusinessAnalystForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerEditForm.resx">
+      <DependentUpon>CustomerEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerListForm.resx">
+      <DependentUpon>CustomerListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerRequestCreate.resx">
+      <DependentUpon>CustomerRequestCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerRequestEvaluation.resx">
+      <DependentUpon>CustomerRequestEvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeEditForm.resx">
+      <DependentUpon>EmployeeEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeListForm.resx">
+      <DependentUpon>EmployeeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeLoginForm.resx">
+      <DependentUpon>EmployeeLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdleTaskForm.resx">
+      <DependentUpon>IdleTaskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectDetailsForm.resx">
+      <DependentUpon>ProjectDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectEditForm.resx">
+      <DependentUpon>ProjectEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectListForm.resx">
+      <DependentUpon>ProjectListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectManagerForm.resx">
+      <DependentUpon>ProjectManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SoftwareDeveloperForm.resx">
+      <DependentUpon>SoftwareDeveloperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskEvaluation.resx">
+      <DependentUpon>TaskEvaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskForm.resx">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskTakeDown.resx">
+      <DependentUpon>TaskTakeDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamLeaderForm.resx">
+      <DependentUpon>TeamLeaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TesterForm.resx">
+      <DependentUpon>TesterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\01-BusinessLayer\01-BusinessLayer.csproj">
+      <Project>{5fae4a0d-0186-43bb-8e2f-702fda5a19b1}</Project>
+      <Name>01-BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\01-DataAccessLayer\01-DataAccessLayer.csproj">
+      <Project>{0893E1F0-2F37-45B1-8E1A-F14123F59A34}</Project>
+      <Name>01-DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\01-Entities\01-Entities.csproj">
+      <Project>{cb92dd1a-d3be-46b8-be35-60b4dd77cde7}</Project>
+      <Name>01-Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
